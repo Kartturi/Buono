@@ -1,0 +1,40 @@
+.main {
+    display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+  z-index: 100;
+  color: antiquewhite;
+  position: absolute;
+}
+
+.darktext {
+    color: #333333;
+}
+
+.desc {
+    padding: 30px;
+    font-size: 30px;
+    color: white;
+    line-height: 0.9;
+    text-align: left;
+}
+
+.textFade {
+    color: white;
+    display: inline-block;
+    transition: all 1s;
+    width: 300px;
+    text-align: left;
+  }
+
+  .showText {
+      opacity: 1;
+  }
+
+  .hideText {
+      opacity: 0;
+  }
