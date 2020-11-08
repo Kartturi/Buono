@@ -4,6 +4,7 @@ import React from "react"
 import Container from "../components/Container/Container";
 import Main from "../components/Main";
 import { library } from "@fortawesome/fontawesome-svg-core"
+import MainBackground from '../components/Sketch'
 import {
   faHome,
   faCoffee,
@@ -36,9 +37,8 @@ const IndexPage = () => (
   <Container>
     <Main />
   </Container>
-  <Container>
-    <Main />
-  </Container>
+  
+  <MainBackground />
   </div>
   
 )

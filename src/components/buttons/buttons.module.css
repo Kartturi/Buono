@@ -25,10 +25,3 @@
     background-color: red;
 }
 
-.buttonFade {
-    color: white;
-    display: inline-block;
-    transition: all 1s;
-    width: 300px;
-    text-align: left;
-  }

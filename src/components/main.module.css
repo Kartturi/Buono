@@ -31,10 +31,17 @@
     text-align: left;
   }
 
-  .showText {
-      opacity: 1;
-  }
+.showText {
+    opacity: 1;
+}
 
-  .hideText {
-      opacity: 0;
-  }
+.hideText {
+    opacity: 0;
+}
+
+.mainSkills {
+    color: #333333;
+    text-align: center;
+    position: relative;
+    left: 125px;
+}

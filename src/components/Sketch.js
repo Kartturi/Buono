@@ -137,7 +137,9 @@ const MainBackground = (props) => {
           }
     };
  
-    return <Sketch setup={setup} draw={draw} />;
+    return <Sketch setup={setup} draw={draw} style={{
+      width: "1316px",height: "937px",display: "block",position: "absolute",left: "0px",top: "0px"
+    }}/>;
 };
  
 export default MainBackground;

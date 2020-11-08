@@ -2,17 +2,17 @@ import React, { useState, useEffect } from 'react';
 import mainStyle from "./main.module.css";
 import NavigationButton from "./buttons/NavigationButton";
 import userConfigs from "../user-config";
-import MainBackground from '../components/Sketch'
+
 
 const Main = () => {
 
     const name = userConfigs.main.name;
+    const description = userConfigs.main.description;
     const skills = userConfigs.main.skills;
 
     const [skillIndex, setSkillIndex] = useState(0);
     const [fade, setFade] = useState(true);
     const [show, setShow] = useState(false);
-    
 
     useEffect(() => {
 
@@ -43,15 +43,15 @@ const Main = () => {
             </p>
     
             <p className={mainStyle.desc}>
-                I am a Fullstack developer with marketing intuition
+                {description}
             </p>
     
-            <p className={mainStyle.knowledge}>
+            <p className={`${mainStyle.knowledge} ${mainStyle.mainSkills}`}>
     <span className={mainStyle.darktext}>Stuff I know:</span> <span className={`${mainStyle.textFade} ${show === true ? mainStyle.showText: mainStyle.hideText}`}>{skills[skillIndex]}</span>
           </p>
     
           <NavigationButton name="Take a tour" color="white"/>
-          <MainBackground />
+          
         </section>
     )
 }
