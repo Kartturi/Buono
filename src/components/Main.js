@@ -47,7 +47,10 @@ const Main = () => {
             </p>
     
             <p className={`${mainStyle.knowledge} ${mainStyle.mainSkills}`}>
-    <span className={mainStyle.darktext}>Stuff I know:</span> <span className={`${mainStyle.textFade} ${show === true ? mainStyle.showText: mainStyle.hideText}`}>{skills[skillIndex]}</span>
+    <span className={mainStyle.darktext}>Stuff I know:</span> <span className={`${mainStyle.textFade} ${show === true ? mainStyle.showText: mainStyle.hideText}`}>
+        {skills[skillIndex]}
+        {/* <img src={skills[skillIndex]} style={{width: "50px", height: "50px"}}></img>{} */}
+        </span>
           </p>
     
           <NavigationButton name="Take a tour" color="white"/>

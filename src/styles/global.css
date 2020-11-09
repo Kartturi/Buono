@@ -16,3 +16,9 @@ body {
   font-family: "Montserrat", sans-serif;
   min-height: 100vh;
 }
+
+
+h2 {
+  font-size: 3.6rem;
+  padding: 60px;
+}
