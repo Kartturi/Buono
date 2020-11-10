@@ -53,7 +53,7 @@ const Main = () => {
         </span>
           </p>
     
-          <NavigationButton name="Take a tour" color="white"/>
+          <NavigationButton destination="projects" name="Take a tour" color="white"/>
           
         </section>
     )

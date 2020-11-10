@@ -17,6 +17,7 @@ import {
   faSchool,
   faCar,
   faUser,
+  faExternalLinkAlt
 } from "@fortawesome/free-solid-svg-icons"
 
 
@@ -30,7 +31,8 @@ library.add(
   faSchool,
   faCar,
   faUser,
-  faArrowDown
+  faArrowDown,
+  faExternalLinkAlt
 )
 
 const IndexPage = () => (

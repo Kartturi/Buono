@@ -25,3 +25,8 @@
     background-color: red;
 }
 
+.dark {
+    background: #333333;
+    color: white;
+}
+

@@ -19,20 +19,26 @@ module.exports = {
         {
             name: "Dasgame",
             info: "Learn German words fast and easy way",
+            img: "dasgame.jpg",
             tech: [
                 "Express",
                 "React",
                 "Redux",
                 "Wepback",
                 "MongoDB"
-            ]
+            ],
+            color: "#426b77",
+            link: "https://thedasgame.herokuapp.com/game/nouns/public"
         },
         {
             name: "Resume builder",
             info: "Build many resumes easily",
+            img: "resumeBuilder.png",
             tech: [
                 "React"
-            ]
+            ],
+            color: "#6d593b",
+            link: "https://resume-builder-kartturi.netlify.com/"
         }
     ]
   }

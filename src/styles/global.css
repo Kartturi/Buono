@@ -22,3 +22,14 @@ h2 {
   font-size: 3.6rem;
   padding: 60px;
 }
+
+
+/* Projects hover */
+
+.project-global:hover .project-global-front {
+  transform: rotateY(-180deg);
+}
+
+.project-global:hover .project-global-back {
+  transform: rotateY(0);
+}

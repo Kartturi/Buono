@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 
 const NavigationButton = props => (
-    <a href="#projects" className={`${buttonStyles.default} ${buttonStyles[props.color]}`}>{props.name} <FontAwesomeIcon icon="arrow-down"
+    <a href={`#${props.destination}`} className={`${buttonStyles.default} ${buttonStyles[props.color]}`}>{props.name} <FontAwesomeIcon icon="arrow-down"
     size="1x"/></a>
 )
 
