@@ -31,6 +31,8 @@ const Projects = () => {
                 style={{background: project.color}}
                 >
                     <h4 className={style.backInfo}>Info</h4>
+                    <br></br>
+                    
                     <ul>
                         {techs}
                     </ul>
@@ -48,14 +50,15 @@ const Projects = () => {
 
     return ( 
         <section id="projects" className={style.projects}>
-            <h2 className="projects-title">Stuff I have been working on</h2>
+            <h2 className="projects-title">Some fun side projects</h2>
             <div className={style.container}>
                 {projectInfos}
             </div>
-
-            <div>
+            <div style={{height: "20px"}}></div>
+            <div className={style.btnContainer}>
              <NavigationButton destination="skills" name="Skills next" color="dark"/>
             </div>
+            
         </section>
      );
 }

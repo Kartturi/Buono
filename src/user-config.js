@@ -35,10 +35,59 @@ module.exports = {
             info: "Build many resumes easily",
             img: "resumeBuilder.png",
             tech: [
-                "React"
+                "React",
+                "Asp.net Core",
+                "C#"
+                ,"SQL server"
             ],
             color: "#6d593b",
             link: "https://resume-builder-kartturi.netlify.com/"
+        },
+        {
+            name: "Workfinder",
+            info: "Find a job for yourself",
+            img: "workfinder.jpg",
+            tech: [
+                "Python",
+                "Flask",
+                "Vue"
+
+            ],
+            color: "#be37be",
+            link: "https://workfinder-kartturi.herokuapp.com/"
+        },
+        {
+            name: "Virtual tour agency website",
+            info: "Concept",
+            img: "3doptics.jpg",
+            tech: [
+                "React",
+                "Gatsby"
+            ],
+            color: "#666666",
+            link: "https://demo-3doptics.netlify.com/"
+        },
+        {
+            name: "Background changer",
+            info: "Desktop app",
+            img: "backgroundchanger.png",
+            tech: [
+                "C#",
+                "WPF"
+            ],
+            color: "#1d1518",
+            link: "#"
+        },
+        {
+            name: "This portofolio site",
+            info: "Put your info and you are good to go",
+            img: "portfolio.png",
+            tech: [
+                "React",
+                "Gatsby"
+            ],
+            color: "#F45B4D",
+            link: "https://github.com/Kartturi/Buono"
         }
     ]
   }
