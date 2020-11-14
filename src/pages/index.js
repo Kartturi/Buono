@@ -4,6 +4,7 @@ import React from "react"
 import Container from "../components/Container/Container";
 import Main from "../components/Main";
 import Projects from "../components/projects/Projects";
+import Skills from "../components/skills/Skills";
 import { library } from "@fortawesome/fontawesome-svg-core"
 import MainBackground from '../components/Sketch'
 import {
@@ -42,6 +43,9 @@ const IndexPage = () => (
   </Container>
   <Container>
     <Projects />
+  </Container>
+  <Container>
+    <Skills />
   </Container>
   
   <MainBackground />

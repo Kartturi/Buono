@@ -90,6 +90,16 @@ module.exports = {
             link: "https://github.com/Kartturi/Buono"
         }
     ]
+    ,
+    skills: [
+        {
+            category: "Front-end"
+        },
+        {
+            category: "Backend"
+        }
+        
+    ]
   }
 
 //   {name: "Javascript",
