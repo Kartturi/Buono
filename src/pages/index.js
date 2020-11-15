@@ -1,57 +1,48 @@
 import React from "react"
 
 //Components
-import Container from "../components/Container/Container";
-import Main from "../components/Main";
-import Projects from "../components/projects/Projects";
-import Skills from "../components/skills/Skills";
+import Container from "../components/Container/Container"
+import Main from "../components/Main"
+import Projects from "../components/projects/Projects"
+import Skills from "../components/skills/Skills"
 import { library } from "@fortawesome/fontawesome-svg-core"
-import MainBackground from '../components/Sketch'
+import MainBackground from "../components/Sketch"
 import {
-  faHome,
-  faCoffee,
-  faHotel,
-  faArrowRight,
-  faArrowLeft,
   faArrowDown,
-  faTimesCircle,
-  faSchool,
-  faCar,
-  faUser,
-  faExternalLinkAlt
+  faExternalLinkAlt,
+  faBaseballBall,
+  faFootballBall,
+  faBowlingBall,
+  faVolleyballBall,
+  faTableTennis,
+  faGolfBall,
 } from "@fortawesome/free-solid-svg-icons"
 
-
 library.add(
-  faHome,
-  faCoffee,
-  faHotel,
-  faArrowLeft,
-  faArrowRight,
-  faTimesCircle,
-  faSchool,
-  faCar,
-  faUser,
   faArrowDown,
-  faExternalLinkAlt
+  faExternalLinkAlt,
+  faBaseballBall,
+  faFootballBall,
+  faBowlingBall,
+  faVolleyballBall,
+  faTableTennis,
+  faGolfBall
 )
 
 const IndexPage = () => (
   <div>
-  <Container>
-    <Main />
-  </Container>
-  <Container>
-    <Projects />
-  </Container>
-  <Container>
-    <Skills />
-  </Container>
-  
-  <MainBackground />
+    <Container>
+      <Main />
+    </Container>
+    <Container>
+      <Projects />
+    </Container>
+    <Container>
+      <Skills />
+    </Container>
+
+    <MainBackground />
   </div>
-  
 )
 
-
-export default IndexPage;
+export default IndexPage

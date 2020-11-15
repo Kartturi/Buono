@@ -17,12 +17,10 @@ body {
   min-height: 100vh;
 }
 
-
 h2 {
   font-size: 3.6rem;
   padding: 60px;
 }
-
 
 /* Projects hover */
 
@@ -32,4 +30,19 @@ h2 {
 
 .project-global:hover .project-global-back {
   transform: rotateY(0);
+}
+
+/* Skills table */
+.skills-table {
+}
+.skills-table {
+}
+.skills-table tr td,
+.skills-table tr th {
+  border: 1px solid #666666;
+  padding: 15px;
+}
+
+.skills-table tr th:not(:first-child) {
+  cursor: help;
 }
