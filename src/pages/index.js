@@ -5,6 +5,7 @@ import Container from "../components/Container/Container"
 import Main from "../components/Main"
 import Projects from "../components/projects/Projects"
 import Skills from "../components/skills/Skills"
+import About from "../components/about/About"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import MainBackground from "../components/Sketch"
 import {
@@ -39,6 +40,9 @@ const IndexPage = () => (
     </Container>
     <Container>
       <Skills />
+    </Container>
+    <Container>
+      <About />
     </Container>
 
     <MainBackground />

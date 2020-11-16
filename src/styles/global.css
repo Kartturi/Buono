@@ -46,3 +46,40 @@ h2 {
 .skills-table tr th:not(:first-child) {
   cursor: help;
 }
+
+/* About table */
+
+.bubble-pointer {
+}
+
+.bubble-pointer-1 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  right: 156px;
+  top: 110px;
+  background-color: white;
+}
+
+.bubble-pointer-2 {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  position: absolute;
+  right: 183px;
+  top: 132px;
+  background-color: white;
+}
+
+.about-me-text {
+  width: 100%;
+  font-size: 2.4rem;
+  color: white;
+}
+
+.about-me-text ul li {
+  list-style-type: none;
+  margin-top: 30px;
+  text-align: center;
+}

@@ -154,6 +154,16 @@ module.exports = {
       ],
     },
   ],
+  about: {
+    info: [
+      "Finnish resident located in Turku",
+      "Self-taught web developer",
+      "Commercial background",
+      "Likes to do sports",
+      "Easy-going",
+      "True friend",
+    ],
+  },
 }
 
 //   {name: "Javascript",
