@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import style from "./projects.module.css"
+import ShowDemo from "./ShowDemo";
 import userConfigs from "../../user-config";
 import NavigationButton from "../buttons/NavigationButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -7,18 +8,24 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 const Projects = () => {
 
     const [showDemo, setShowDemo] = useState(false);
+    const [currentDemoProjectData, setCurrentDemoProjectData] = useState("");
 
-    const showDemo = event => {
+    const showDemoEvent = event => {
         event.preventDefault();
-        console.log(event);
+        setShowDemo(true);
     }
 
-    const showDemoButton = exists => {
+    const showDemoButton = (exists,projectData) => {
         console.log(exists);
         if(exists) {
-           return <a href="#" className={style.backLink}>
-                <FontAwesomeIcon onClick={showDemo} title="show demo" icon="film" size="1x"/>
-            </a>
+            
+           return (<a href="#" className={style.backLink}>
+                <FontAwesomeIcon onClick={event => {
+                    event.preventDefault();
+                    setShowDemo(true);
+                    setCurrentDemoProjectData(projectData);
+                }} title="show demo" icon="film" size="1x"/>
+            </a>)
         } else {
             return "";
         }
@@ -62,7 +69,7 @@ const Projects = () => {
                         <a href={project.link} target="_blank" className={style.backLink}>
                             <FontAwesomeIcon icon="external-link-alt" size="1x"/>
                         </a>
-                        {showDemoButton(project.gif)}
+                        {showDemoButton(project.gif, project)}
                     </div>
                 </div>
             </div>
@@ -72,6 +79,7 @@ const Projects = () => {
     return ( 
         <section id="projects" className={style.projects}>
             <h2 className="projects-title">Some fun side projects</h2>
+            {showDemo ? <ShowDemo projectData={currentDemoProjectData}/> : "none"}
             <div className={style.container}>
                 {projectInfos}
             </div>

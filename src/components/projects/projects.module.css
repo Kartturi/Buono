@@ -99,3 +99,60 @@
     position: static;
     padding-top: 50px;
 }
+
+
+.showDemo {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background: rgb(156, 152, 152);
+    display: flex;
+
+}
+
+.showDemoDetails {
+    width: 30%;
+    background-color: green;
+}
+
+.showDemoGif {
+    width: 70%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.showDemoGifImageContainer {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showDemoGifImage {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    border: 10px solid rgb(166, 166, 245);
+    border-radius: 10px;
+}
+
+.showDemoCloseButtonContainer {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    justify-content: flex-end;
+    padding:30px;
+}
+.showDemoCloseIcon {
+    cursor: pointer;
+}
+
