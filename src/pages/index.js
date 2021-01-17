@@ -17,6 +17,7 @@ import {
   faVolleyballBall,
   faTableTennis,
   faGolfBall,
+  faFilm
 } from "@fortawesome/free-solid-svg-icons"
 
 library.add(
@@ -27,7 +28,8 @@ library.add(
   faBowlingBall,
   faVolleyballBall,
   faTableTennis,
-  faGolfBall
+  faGolfBall,
+  faFilm
 )
 
 const IndexPage = () => (

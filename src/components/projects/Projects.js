@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from "./projects.module.css"
 import userConfigs from "../../user-config";
 import NavigationButton from "../buttons/NavigationButton";
@@ -6,11 +6,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Projects = () => {
 
+    const [showDemo, setShowDemo] = useState(false);
+
+    const showDemo = event => {
+        event.preventDefault();
+        console.log(event);
+    }
+
+    const showDemoButton = exists => {
+        console.log(exists);
+        if(exists) {
+           return <a href="#" className={style.backLink}>
+                <FontAwesomeIcon onClick={showDemo} title="show demo" icon="film" size="1x"/>
+            </a>
+        } else {
+            return "";
+        }
+    }
+
     const projectInfos = userConfigs.projects.map((project,index) => {
 
         const techs = project.tech.map((tech,index) => {
             return <li key={index}>{tech}</li>
         })
+
+        
 
         return (
             <div key={index} className={`project-global ${style.project}`}>
@@ -40,8 +60,9 @@ const Projects = () => {
                     <div className={style.backLinkContainer}>
                         Check out 
                         <a href={project.link} target="_blank" className={style.backLink}>
-                        <FontAwesomeIcon icon="external-link-alt" size="1x"/>
+                            <FontAwesomeIcon icon="external-link-alt" size="1x"/>
                         </a>
+                        {showDemoButton(project.gif)}
                     </div>
                 </div>
             </div>

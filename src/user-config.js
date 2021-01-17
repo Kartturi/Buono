@@ -19,7 +19,8 @@ module.exports = {
     {
       name: "Dasgame",
       info: "Learn German words fast and easy way",
-      img: "dasgame.jpg",
+      img: "random.jpg",
+      gif: "dasgame.gif",
       tech: ["Express", "React", "Redux", "Wepback", "MongoDB"],
       color: "#426b77",
       link: "https://thedasgame.herokuapp.com/game/nouns/public",
