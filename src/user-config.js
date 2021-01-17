@@ -27,8 +27,9 @@ module.exports = {
     },
     {
       name: "Resume builder",
+      gif: "cvmaker.gif",
       info: "Build many resumes easily",
-      img: "resumeBuilder.png",
+      img: "resumeBuilder.jpg",
       tech: ["React", "Asp.net Core", "C#", "SQL server"],
       color: "#6d593b",
       link: "https://resume-builder-kartturi.netlify.com/",

@@ -10,9 +10,8 @@ const Projects = () => {
     const [showDemo, setShowDemo] = useState(false);
     const [currentDemoProjectData, setCurrentDemoProjectData] = useState("");
 
-    const showDemoEvent = event => {
-        event.preventDefault();
-        setShowDemo(true);
+    const closeDemoEventCallback = () => {
+        setShowDemo(false);
     }
 
     const showDemoButton = (exists,projectData) => {
@@ -79,7 +78,7 @@ const Projects = () => {
     return ( 
         <section id="projects" className={style.projects}>
             <h2 className="projects-title">Some fun side projects</h2>
-            {showDemo ? <ShowDemo projectData={currentDemoProjectData}/> : "none"}
+            {showDemo ? <ShowDemo projectData={currentDemoProjectData} callback={closeDemoEventCallback}/> : ""}
             <div className={style.container}>
                 {projectInfos}
             </div>
