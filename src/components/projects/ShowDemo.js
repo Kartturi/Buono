@@ -22,12 +22,8 @@ const ShowDemo = props => {
         }
         setCurrentProject(props.projectData.name);
         setCurrentProjectData(currentProjectInfo);
-
+        console.log("init");
     }, [])
-
-    const tech = props.projectData.tech.map((item,index) => {
-        return <li key={index}>{item}</li>
-    });
 
     const changeProject = e => {
         const direction = e.currentTarget.dataset.direction === "right" ? 1 : -1;
@@ -50,6 +46,7 @@ const ShowDemo = props => {
             color: projectArr[nextProjectIndex].color,
             gif: projectArr[nextProjectIndex].gif
         }
+        console.log("current", currentProjectInfo);
         setCurrentProject(currentProjectInfo.name);
         setCurrentProjectData(currentProjectInfo);
     }
@@ -69,7 +66,9 @@ const ShowDemo = props => {
                 <p>{currentProjectData.info}</p>
                 <h4 style={{marginTop: "15px"}}>Tech</h4>
                 <ul>
-                    {tech}
+                    {!currentProjectData ? "" :  currentProjectData.tech.map((item,index) => {
+                        return <li key={index}>{item}</li>;
+                    })}
                 </ul>
             </div>
             <div id="show-demo-gif" className={style.showDemoGif}>

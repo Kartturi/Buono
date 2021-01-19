@@ -41,6 +41,7 @@ module.exports = {
       tech: ["Python", "Flask", "Vue"],
       color: "#be37be",
       link: "https://workfinder-kartturi.herokuapp.com/",
+      gif: "workfinder.gif"
     },
     {
       name: "Virtual tour agency website",
