@@ -5,12 +5,15 @@ import userConfigs from "../../user-config";
 import NavigationButton from "../buttons/NavigationButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
+
 const Projects = () => {
 
     const [showDemo, setShowDemo] = useState(false);
     const [currentDemoProjectData, setCurrentDemoProjectData] = useState("");
 
     const closeDemoEventCallback = () => {
+        //enable page scroll
+        document.body.style.overflow = "scroll";
         setShowDemo(false);
     }
 
@@ -18,7 +21,7 @@ const Projects = () => {
         console.log(exists);
         if(exists) {
             
-           return (<a href="#" className={style.backLink}>
+           return (<a href="" className={style.backLink}>
                 <FontAwesomeIcon onClick={event => {
                     event.preventDefault();
                     setShowDemo(true);
@@ -64,10 +67,7 @@ const Projects = () => {
                     </ul>
 
                     <div className={style.backLinkContainer}>
-                        Check out 
-                        <a href={project.link} target="_blank" className={style.backLink}>
-                            <FontAwesomeIcon icon="external-link-alt" size="1x"/>
-                        </a>
+                        Watch demo:
                         {showDemoButton(project.gif, project)}
                     </div>
                 </div>
@@ -77,14 +77,16 @@ const Projects = () => {
 
     return ( 
         <section id="projects" className={style.projects}>
-            <h2 className="projects-title">Some fun side projects</h2>
             {showDemo ? <ShowDemo projectData={currentDemoProjectData} callback={closeDemoEventCallback}/> : ""}
-            <div className={style.container}>
-                {projectInfos}
-            </div>
-            <div style={{height: "20px"}}></div>
-            <div className={style.btnContainer}>
-             <NavigationButton destination="skills" name="Skills next" color="dark"/>
+            <h2 className="projects-title">Some fun side projects</h2>
+            <div style={{display: showDemo ? "" : "" }}>
+                <div className={style.container}>
+                    {projectInfos}
+                </div>
+                <div style={{height: "20px"}}></div>
+                <div className={style.btnContainer}>
+                <NavigationButton destination="skills" name="Skills next" color="dark"/>
+                </div>
             </div>
             
         </section>

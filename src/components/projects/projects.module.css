@@ -101,6 +101,13 @@
 }
 
 
+@keyframes showDemoAnimation {
+    0%   { transform: translate(0, -1000%); }
+    50% { transform: translate( 0, 0); }
+    75%  { transform: translateY(-100px); }
+    100% { transform: translate( 0, 0); }
+  }
+
 .showDemo {
     position: fixed;
     top: 0px;
@@ -110,6 +117,9 @@
     z-index: 10000;
     background: rgb(156, 152, 152);
     display: flex;
+
+    animation-name: showDemoAnimation;
+    animation-duration: .8s;
 
 }
 
@@ -124,9 +134,16 @@
     font-size: 17px;
 }
 
+.showDemoDetailsContainer {
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .showDemoGif {
     width: 70%;
-    background-color: white;
+    background-color: rgb(237, 235, 238);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,7 +182,11 @@
 .showDemoTitleContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    width: 80%;
+}
+.showDemoDetailsListContainer {
+    list-style-type: none;
 }
 
