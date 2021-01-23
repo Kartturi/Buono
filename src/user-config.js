@@ -19,7 +19,7 @@ module.exports = {
     {
       name: "Dasgame",
       info: "Learn German words fast and easy way",
-      img: "random.jpg",
+      img: "dasgame.jpg",
       gif: "dasgame.gif",
       tech: ["Express", "React", "Redux", "Wepback", "MongoDB"],
       color: "#426b77",
@@ -29,7 +29,7 @@ module.exports = {
       name: "Resume builder",
       gif: "cvmaker.gif",
       info: "Build many resumes easily",
-      img: "resumeBuilder.jpg",
+      img: "resumeBuilder.png",
       tech: ["React", "Asp.net Core", "C#", "SQL server"],
       color: "#6d593b",
       link: "https://resume-builder-kartturi.netlify.com/",
@@ -41,7 +41,7 @@ module.exports = {
       tech: ["Python", "Flask", "Vue"],
       color: "#be37be",
       link: "https://workfinder-kartturi.herokuapp.com/",
-      gif: "workfinder.gif"
+      gif: "workfinder.gif",
     },
     {
       name: "Virtual tour agency website",
@@ -50,6 +50,7 @@ module.exports = {
       tech: ["React", "Gatsby"],
       color: "#666666",
       link: "https://demo-3doptics.netlify.com/",
+      gif: "vrsite.gif",
     },
     {
       name: "Background changer",
@@ -58,6 +59,7 @@ module.exports = {
       tech: ["C#", "WPF"],
       color: "#1d1518",
       link: "#",
+      gif: "backgroundChanger.gif",
     },
     {
       name: "This portofolio site",
